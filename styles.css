@@ -1170,8 +1170,20 @@ footer small {
     
 }
 
+
+
 .article-galeria img {
+    animation: ease-in gridanimation 1s;
     transition: transform 0.3s;
+}
+
+@keyframes gridanimation {
+    0% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 .article-galeria{
@@ -1188,7 +1200,7 @@ footer small {
 }
 
 .article-galeria img:active {
-    transform: scale(1.5);
+    transform: scale(1.25);
     border: 4px;
     border-color: rgb(207, 4, 116);
     border-style: solid;
