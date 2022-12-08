@@ -29,9 +29,9 @@ header nav a {
 }
 
 .header-nav {
-    position: absolute;
-    top: 270px;
-    right: 750px;
+    display: flex;
+    margin-top: 100px;
+    margin-right: 20px;
 }
 
 nav a:hover {
@@ -40,18 +40,18 @@ nav a:hover {
     background-color: rgba(97, 9, 240, 0.587);
 }
 
-/* header {
+header {
     display: flex;
     justify-content: space-between;
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,0.9372081596310399) 0%, rgba(3,3,47,0.9428104005273985) 35%, rgba(25,2,73,1) 100%);  
     align-items: center;
-    height: 234px;
-    background-image: url('./resources/chibi-banner.jpg');
-    background-repeat: repeat-x;
+    height: 150px;
     padding: 10px;
     margin-bottom: 0px;
-} */
+}
 
-.bosque {
+/* .bosque {
     background-image: url('./resources/bosque-fondo.jpg');
     width: 1200px;
     height: 320px;
@@ -113,11 +113,59 @@ nav a:hover {
     background-size: 100%;
 }
 
+@keyframes moverarboles {
+    0% {
+        background-position: 0;
+    }
+    100% {
+        background-position: 1200px;
+    }
+}
+
+@keyframes moverino {
+    from {
+        top: 20px;
+    }
+    to {
+        top: 40px;
+    }
+}
+
+@keyframes movertan-nez {
+    from {
+        top: 20px;
+    }
+    to {
+        top: 40px;
+    }
+}
+
+@keyframes moverzeni {
+    from {
+        top: 20px;
+    }
+    to {
+        top: 40px;
+    }
+}
+
+@keyframes movercesped {
+    0% {
+        background-position: 0;
+    }
+    100% {
+        background-position: 1200px;
+    }
+} */
+
 .top-header {
-    position: absolute;
-    top: 50px;
+    /* position: absolute;
+    top: 25px;
     left: 100px;
-    z-index: 1;
+    z-index: 1; */
+    display: flex;
+    margin-left: 20px;
+    padding: 15px;
 }
 
 .nombre-pagina {
@@ -131,7 +179,7 @@ nav a:hover {
 }
 
 .logo-header img {
-    height: 175px;
+    height: 75px;
     margin-right: 10px;
     animation: ease-in animacion 1s;
     transition: transform 0.3s;
@@ -1207,49 +1255,19 @@ footer small {
     border-radius: 8px;
 }
 
-/* -- medias queries -- */
+/* -- media queries -- */
+@media only screen and (max-width:768px){
 
-@keyframes moverarboles {
-    0% {
-        background-position: 0;
+}
+
+@media only screen and (max-width:576px){
+    header {
+    flex-direction: column;
+
     }
-    100% {
-        background-position: 1200px;
+
+    .video-game {
+        flex-direction: column;
     }
 }
 
-@keyframes moverino {
-    from {
-        top: 20px;
-    }
-    to {
-        top: 40px;
-    }
-}
-
-@keyframes movertan-nez {
-    from {
-        top: 20px;
-    }
-    to {
-        top: 40px;
-    }
-}
-
-@keyframes moverzeni {
-    from {
-        top: 20px;
-    }
-    to {
-        top: 40px;
-    }
-}
-
-@keyframes movercesped {
-    0% {
-        background-position: 0;
-    }
-    100% {
-        background-position: 1200px;
-    }
-}
